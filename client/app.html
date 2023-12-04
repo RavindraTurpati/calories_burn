@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calory burn Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+ <form class="form">
+     <label for="uiGenders">Gendr</label>
+  <select class="gender" name="" id="uiGenders">
+    <option value="" disabled="disabled" selected="selected">Choose a gender</option>
+		<option>m</option>
+        <option>f</option>
+  </select>
+    <label>Agee</label>
+    <input class="age"  type="text" id="uiAge" class="floatLabel" name="Age" >
+     <label>Heigt</label>
+    <input class="height"  type="text" id="uiHeight" class="floatLabel" name="Height">
+     <label>Weigt</label>
+    <input class="weight"  type="text" id="uiWeight" class="floatLabel" name="Weight">
+     <label>Durat</label>
+    <input class="duration"  type="text" id="uiDuration" class="floatLabel" name="Duration">
+     <label>HRate</label>
+    <input class="heart_rate"  type="text" id="uiHeart_rate" class="floatLabel" name="Heart_rate">
+     <label>BTemp</label>
+    <input class="body_temp"  type="text" id="uiBody_temp" class="floatLabel" name="Body_temp">
+
+       <button class="submit" onclick="onClickedEstimateCalories()" type="button">Estimate calories</button>
+       <div id="uiEstimatedCalories" class="result"></div>
+
+
+ </form>
+</body>
+</html>
+
